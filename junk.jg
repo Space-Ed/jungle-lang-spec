@@ -1,0 +1,73 @@
+~ split X -> 
+~              join Y
+~ race    <-
+
+~ split X
+~ join  Y
+~ recompose
+
+
+// Medium as a composite of laws, parametrised by a medium expression
+< cast ~ flush ~ order > :
+    X      ->  Y
+    a.#c:b =>  
+
+
+// defualt symbolic media alias, simply send calls from a to b
+<~>:
+    a->b
+
+// media with parameterised and identifier
+< split #X,  ~ ~ order > mediaA :
+    #X -> 
+
+// symbolic alias to law with explicit head properties  
+    |> medium : mediaA
+    |> from: X
+    |> to: Y
+
+// law single value pattern
+<law>: x-(mediaA)->y
+
+
+//full cell called a in scope which feeds x through Y which increments forward and inverts the
+<cell> a:
+    <~>
+        X->Y->Z
+    
+    <+i>  X
+    <+r>  Y (arg, U) => ( U(arg + 1) * -1 ) 
+    <+o>  Z
+    <+x>  Naught
+
+//this cell directs all members of group, to the drain that is some external connection.
+
+<cell> b: 
+    < wrap ~ > : group.#d -> drain
+    
+    <pod> group :
+        <+i> vax
+        <+i> bax
+
+    <+netsink> drain :
+        |> address: blah.domain.net
+
+//symbolic cell token, main cell, data is changable by @push; the built in patch/notify or by designating the value by its tag.
+
+//features anonymous js function in place of a contact, as an intermediate process 
+<@> main:
+    data # number age : 3
+    more-data # string name : thing    
+
+    <~> 
+       changedata -{(arg)=>({data:arg})}-> @push
+       changemore -> #name
+
+    <+i> changedata
+    <+i> changemore
+
+//a medium that breaks up data from blah and sends to the appropriate group and terminal
+<split   ~> 
+    blah -> .
+
+
