@@ -9,13 +9,15 @@ To be a conformant implementation requires a certain minimal requirements to be 
 ## Contents
 
 ### [Introduction](introduction.md)
-
 learn about Jungles aims and basic concepts 
+    - [principles](introduction.md#Basic Principles)
+    - [core elements](introduction.md#Core Element Overview)
+    - [core methods](introduction.md#Construct Methods)
 
-### Interpretation
+### [Interpretation](interpretation.md)
 how to read the specification
-    - [Versions]
-    - [Grammar Syntax]
+    - [Versions]()
+    - [Formal Grammar Syntax]()
 
 ### [OS level utilities](utility.md)
 description of the jg cli tool, configuration and jungle system process 
@@ -23,10 +25,10 @@ description of the jg cli tool, configuration and jungle system process
         - `jg init`
     - [Extended](utilitiy.md#extended.md)
 
-### Syntax
-
-    - [Serialization Format](syntax-foundation.md)
-    - [System Description](syntax-extended.md)
+### [Syntax](syntax.md)
+    - [Different types](syntax.md)
+    - [Serialization Format](syntax.md)
+    - [System Description](syntax.md)
 
 ### Behaviour
 this section describes the expected behaviour of a jungle system which is described using the JGL syntax

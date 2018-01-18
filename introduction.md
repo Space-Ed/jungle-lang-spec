@@ -3,10 +3,9 @@
 
 Jungle is a language and toolchain for creating systems which brings new features above the standard constructs and paradigms of existing programming languages and data formats. 
 
-it is intended to target many platforms, including
+it is intended to target many platforms, including web applications and servers. 
 
-
-## Language principles
+## Basic Principles
 
 ### Composability
     any system can be part of a larger system  
@@ -24,7 +23,7 @@ it is intended to target many platforms, including
     changes to the structure of the program can be detected and reflected elsewhere
 
 
-## Component Overview
+## Core Element Overview
 
 To meet all of these requirements the data model of a program is a tree where each node is called a __cell__ which forms lateral connections through the use of __media__  __laws__ and __contacts__. The base class for all of these is called a __construct__ that is part of a composite pattern with the methods __patch__, __extract__ , __fetch__ and __notify__. A system as a whole, or any of its parts are __created__ within a __domain__ that system can also be __described__.
 
