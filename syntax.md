@@ -13,6 +13,8 @@ Like in JSON key and value are seperated by a colon. but the same composite can 
 ## Language Constructs
 
 ### Values
+
+the form of a value is either a js-literal or a jg-construct.
 ```
 [[value] =>
     [[number]]  
@@ -23,17 +25,24 @@ Like in JSON key and value are seperated by a colon. but the same composite can 
 ]
 
 [[number]=>/\d*/]
-
+[[string]=>"[[unicode char]*]"
+[[object]]=>{[[]...(,)]}
+[[array]]=>\[ [[value
 ```
 ### Properties
+```
 [[property] => 
     [Data Property]
     [ConstructProperty]
     [AnonymousProperty]
     [nullproperty]
     [headproperty]
+]
+```
 ### Data Property
-> [[name]] : [[value]]
+```
+[[name]] : [[value]]
+```
 ### Construct Property
 ```
 <[[basis]]> [[name]] : [[value]]

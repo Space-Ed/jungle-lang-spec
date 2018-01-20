@@ -10,41 +10,36 @@ To be a conformant implementation requires a certain minimal requirements to be 
 
 ### [Introduction](introduction.md)
 learn about Jungles aims and basic concepts 
-    - [principles](introduction.md#Basic Principles)
-    - [core elements](introduction.md#Core Element Overview)
-    - [core methods](introduction.md#Construct Methods)
+- [principles](introduction.md/#basic-principles)
+- [core elements](./introduction.md#core-elements)
+- [core methods](introduction.md#construct-methods)
 
 ### [Interpretation](interpretation.md)
 how to read the specification
-    - [Versions]()
-    - [Formal Grammar Syntax]()
+- [Versions]()
+- [Formal Grammar Syntax](interpretation.md)
 
 ### [OS level utilities](utility.md)
 description of the jg cli tool, configuration and jungle system process 
-    - [Fountational](utility.md#Foundational)
-        - `jg init`
-    - [Extended](utilitiy.md#extended.md)
+- [Fountational](utility.md#Foundational)
+    - `jg init`
+- [Extended](utilitiy.md#extended.md)
 
 ### [Syntax](syntax.md)
-    - [Different types](syntax.md)
-    - [Serialization Format](syntax.md)
-    - [System Description](syntax.md)
+- [Different types](syntax.md)
+- [Serialization Format](syntax.md)
+- [System Description](syntax.md)
 
 ### Behaviour
 this section describes the expected behaviour of a jungle system which is described using the JGL syntax
-    - [Foundational](behaviour-foundation.md)
-    - [Extended](behaviour-extended.md)
+- [Foundational](behaviour-foundation.md)
+- [Extended](behaviour-extended.md)
 
 ### Standard Library
-   - a platform which implements interfaces to common underlying systems (like the file system or TCP sockets) should be use consistent with other implementations. So here we describe the standard library. 
+- a platform which implements interfaces to common underlying systems (like the file system or TCP sockets) should be use consistent with other implementations. So here we describe the standard library. 
 
 ### Specification Tests
 a body of language agnostic specifications against the targets. 
-
-### Implementations
-
-the only implementation guide is that of the
-
 
 Copyright (c) Edward Dalley 2018
 
