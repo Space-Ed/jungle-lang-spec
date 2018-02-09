@@ -1,0 +1,30 @@
+| meta : 'math'
+
+mind : 'map'
+property : 0
+
+: 'anonymouse'
+
+unvalued :
+
+object : 
+    key : "Value" 
+
+<+> input :
+<+> output :
+<+> transform :
+    | map : (x)=>{return x+1}
+       
+<~> medium :
+   ! input -> transform -> output
+
+
+<@> subcell :
+    | notifies : false
+    | fetches : false
+    
+    <~special~>
+        <+> opening :
+        ! opening -> 
+            <+> :
+                | reduce : (inp, val)=> ( inp+val ) 
